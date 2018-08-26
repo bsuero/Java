@@ -13,7 +13,7 @@ public class Stack {
     }
 
     public void push(long j) {
-        
+
         top++;
         stackArray[top] = j;
     }
@@ -23,6 +23,21 @@ public class Stack {
         int old_top = top;
         top--;
         return stackArray[old_top];
+    }
+
+    public long peak() {
+
+        return stackArray[top];
+    }
+
+    public boolean isEmpty() {
+
+        return ( top == -1);
+    }
+
+    public boolean isFull() {
+        
+        return (maxSize-1 == top);
     }
 
     public static void main(String[] args) {
