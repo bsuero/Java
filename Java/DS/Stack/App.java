@@ -12,6 +12,7 @@ public class App {
 
             long value = theStack.pop();
             System.out.println(value);
+            
         }
         System.out.println(reverseString("lifo"));
 
