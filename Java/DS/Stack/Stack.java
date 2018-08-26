@@ -39,10 +39,4 @@ public class Stack {
         
         return (maxSize-1 == top);
     }
-
-    public static void main(String[] args) {
-        
-        
-
-    }
 }
