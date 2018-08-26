@@ -13,5 +13,25 @@ public class App {
             long value = theStack.pop();
             System.out.println(value);
         }
+        System.out.println(reverseString("lifo"));
+
+    }
+
+    public static String reverseString(String str) {
+        int stackSize = str.length();                           // get the max stack size
+
+        StackChar theStack = new StackChar(stackSize);
+
+        for(int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);                    //getting a char for the input string
+            theStack.push(ch);
+        }
+
+        String result = "";
+        while(!theStack.isEmpty()) {
+            char ch = theStack.pop();
+            result = result + ch;
+        }
+        return result;
     }
 }
