@@ -28,7 +28,7 @@ public class App {
         int numberOfNodes = 0;
         Node currentNode = anode;
 
-        while(currentNode != null) {
+        while(currentNode != null) {    //currentNode is going to be the last node in the array.
             numberOfNodes++;
             currentNode = currentNode.next;
         }
